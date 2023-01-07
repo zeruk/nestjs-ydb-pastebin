@@ -27,7 +27,8 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "ydb-sdk": "^3.7.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
@@ -43,6 +44,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "29.3.1",
+    "pino-pretty": "^9.1.1",
     "prettier": "^2.3.2",
     "source-map-support": "^0.5.20",
     "supertest": "^6.1.3",

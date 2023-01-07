@@ -1,8 +1,17 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
+import { Driver } from 'ydb-sdk';
 import { CreatePastebinDto } from './dto/create-pastebin.dto';
+import { Pastebin } from './entities/pastebin.entity';
 
 @Injectable()
 export class PastebinsService {
+  constructor(
+    @Inject('YDB_DRIVER') private ydb: Driver,
+    @Inject('PASTEBIN_ENTITY') private entity: Pastebin,
+  ) {
+    console.log(ydb, entity);
+  }
+
   create(createPastebinDto: CreatePastebinDto) {
     return 'This action adds a new pastebin';
   }
