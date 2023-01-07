@@ -1,12 +1,12 @@
-import { IsEnum, IsOptional, IsString } from 'class-validator';
+import { IsEnum, IsOptional, IsString, MaxLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
-enum PastebinTypes {
+export enum PastebinTypes {
   js = 'JS',
   ts = 'TS',
 }
 
-enum PastebinVisibilities {
+export enum PastebinVisibilities {
   public = 'PUBLIC',
   notListed = 'NOT_LISTED',
 }
@@ -14,6 +14,7 @@ enum PastebinVisibilities {
 export class CreatePastebinDto {
   @ApiProperty({ example: 'Text to paste' })
   @IsString()
+  @MaxLength(2000)
   text: string;
 
   @ApiProperty({

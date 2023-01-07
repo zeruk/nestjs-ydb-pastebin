@@ -27,8 +27,8 @@ export class Pastebin extends TypedData {
   @declareType(Types.UTF8)
   public visibility: string;
 
-  @declareType(Types.DATE)
-  public created: Date;
+  @declareType(Types.TIMESTAMP)
+  public created: number;
 
   constructor(data: IPastebin) {
     super(data);
@@ -36,6 +36,6 @@ export class Pastebin extends TypedData {
     this.text = data.text;
     this.type = data.type;
     this.visibility = data.visibility;
-    this.created = new Date();
+    this.created = new Date().valueOf();
   }
 }
