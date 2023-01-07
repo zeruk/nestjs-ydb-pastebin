@@ -5,4 +5,5 @@ export default class Config {
     process.env.DB_CONNECT_TIMEOUT_S || '10',
   );
   static DB_PB_NAME = 'pastebins';
+  static DB_RESET = Boolean(process.env.DB_RESET || false);
 }
