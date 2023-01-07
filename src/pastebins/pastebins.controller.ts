@@ -18,11 +18,6 @@ export class PastebinsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.pastebinsService.findOne(+id);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.pastebinsService.remove(+id);
+    return this.pastebinsService.findOne(id);
   }
 }
