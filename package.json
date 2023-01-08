@@ -1,10 +1,10 @@
 {
   "name": "nestjs-ydb-pastebin",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Sample pastebin API app that uses NestJS and YDB database",
+  "author": "Ilya Shevchenko",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
