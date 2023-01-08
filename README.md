@@ -1,6 +1,12 @@
-# Nestjs YDB sample application
+<div align="center">
+  <h1>Nestjs YDB sample pastebin API application</h1>
+  <a href="https://github.com/prisma/prisma/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
+  <a href="https://github.com/prisma/prisma/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue" /></a>
+  <br />
+  <br />
+</div>
 
-This app shows example implementating headless pastebin API over YDB.
+This app shows example implementating headless pastebin [**Nestjs**](https://nestjs.com/) backed API over [**YDB**](https://ydb.tech/). Uses [**ydb-sdk**](https://www.npmjs.com/package/ydb-sdk) to connect to YDB.
 
 ## Installation
 
